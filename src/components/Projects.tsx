@@ -35,10 +35,10 @@ const Projects = () => {
       category: "Augmented Reality",
       gradient: "from-purple-500 to-blue-500",
       featured: true,
-      coverImage: "src/assets/Human GLB screenshot.png",
+      coverImage: "assets/Human GLB screenshot.png",
       images: [
-        "src/assets/Human GLB screenshot.png",
-        "src/assets/ARView.jpg",
+        "assets/Human GLB screenshot.png",
+        "assets/ARView.jpg",
       ],
       liveDemo: "https://react-ar-model-viewer.vercel.app/",
       repoLink: "https://github.com/KhushaliTrivedi/react-ar-model-viewer"
@@ -53,9 +53,9 @@ const Projects = () => {
       featured: true,
       repoLink: "https://github.com/KhushaliTrivedi/react-360-panorama",
       liveDemo: "https://react-360-panorama.vercel.app/",
-      coverImage: "src/assets/360View.png",
+      coverImage: "assets/360View.png",
       images: [
-        "src/assets/360View.png",
+        "assets/360View.png",
       ]
     },
     {
@@ -68,9 +68,9 @@ const Projects = () => {
       featured: false,
       repoLink: "https://github.com/KhushaliTrivedi/Sequelize-ORM",
       liveDemo: null,
-      coverImage: "src/assets/NodeSequelize.jpg",
+      coverImage: "assets/NodeSequelize.jpg",
       images: [
-        'src/assets/NodeSequelize.jpg'
+        'assets/NodeSequelize.jpg'
       ]
     },
     {
@@ -83,9 +83,9 @@ const Projects = () => {
       featured: false,
       repoLink: "https://github.com/KhushaliTrivedi/fpdi-image-align",
       liveDemo: null,
-      coverImage: "src/assets/FPDF.jpg",
+      coverImage: "assets/FPDF.jpg",
       images: [
-        "src/assets/FPDF.jpg"
+        "assets/FPDF.jpg"
       ]
     },
     {
@@ -98,9 +98,9 @@ const Projects = () => {
       featured: false,
       repoLink: "https://github.com/KhushaliTrivedi/appointmentScheduler",
       liveDemo: null,
-      coverImage: "src/assets/AppointmentScheduler.png",
+      coverImage: "assets/AppointmentScheduler.png",
       images: [
-        "src/assets/AppointmentScheduler.png"
+        "assets/AppointmentScheduler.png"
       ]
     },
     {
@@ -113,9 +113,9 @@ const Projects = () => {
       featured: false,
       repoLink: "https://github.com/KhushaliTrivedi/ondc_testing_api",
       liveDemo: null,
-      coverImage: "src/assets/StoreHippo.avif",
+      coverImage: "assets/StoreHippo.avif",
       images: [
-        "src/assets/StoreHippo.avif"
+        "assets/StoreHippo.avif"
       ]
     },
     {
@@ -128,10 +128,10 @@ const Projects = () => {
       "featured": false,
       "repoLink": "https://github.com/KhushaliTrivedi/node_auth",
       "liveDemo": null,
-      "coverImage": "src/assets/AuthFlow.jpeg",
+      "coverImage": "assets/AuthFlow.jpeg",
       "images": [
-        "src/assets/NodeAuth.jpg",
-        "src/assets/AuthFlow.jpeg",
+        "assets/NodeAuth.jpg",
+        "assets/AuthFlow.jpeg",
       ]
     }
   ];
