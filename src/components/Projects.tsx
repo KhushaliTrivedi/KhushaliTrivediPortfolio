@@ -28,6 +28,24 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "Stacked by Khushali",
+      description: "A beautifully organized cheat code and quick reference documentation hub for developers, built to boost productivity by storing reusable code snippets, logic patterns, and best practices across tech stacks.",
+      fullDescription: "Stacked by Khushali is a personal developer resource site that consolidates essential cheat codes, quick reference guides, and reusable logic snippets for rapid development. It’s structured with clean UI, categorized sections (React, Node.js, SQL, Regex, etc.), and Markdown rendering support. The site empowers developers to save time by offering instant access to solutions for common coding challenges. With features like keyword-based search, tag filters, and mobile responsiveness, it becomes a daily go-to for code productivity.",
+      techStack: ["React.js", "Front-end", "TypeScript", "Tailwind CSS", "Markdown", "Framer Motion"],
+      category: "Frontend Development",
+      gradient: "from-yellow-500 to-red-600",
+      featured: true,
+      repoLink: "https://github.com/KhushaliTrivedi/stacked-by-khushali",
+      liveDemo: "https://stacked-by-khushali.vercel.app/",
+      coverImage: "assets/StackedByKhushali.png",
+      images: [
+        "assets/StackedByKhushali.png",
+        "assets/Edit-StackedByKhushali.png",
+        "assets/edit-StackedByKhushali-2.png",
+        "assets/StackedByKhushali-Search.png"
+      ]
+    },
+    {
       title: "Augmented Reality 3D Product Viewer",
       description: "This project is a React-based AR-enabled 3D model viewer built using the @google/model-viewer web component. It provides an immersive and interactive way for users to explore 3D models and visualize them in their real-world environment using Augmented Reality (AR) directly from the browser—no app download required.",
       fullDescription: "This interactive 3D product viewer leverages modern web technologies to deliver a high-impact, AR-enabled experience for end users. Built with React and TypeScript, and powered by Google's @model-viewer, the application allows users to interact with 3D models in real time and place them in their physical space using Augmented Reality. A dynamic color variant system updates the model's appearance on the fly using WebGL-based material controls, providing a photorealistic and intuitive product browsing experience. The app intelligently detects device capabilities to enable AR via Scene Viewer (Android), Quick Look (iOS), or WebXR. Ideal for e-commerce and digital product demos, this tool elevates product visualization and supports informed purchasing decisions through immersive interaction.",
@@ -50,7 +68,7 @@ const Projects = () => {
       techStack: ["React.js", "Pannellum.js", "JavaScript", "CSS", "Tailwind", "Typescript"],
       category: "React JS",
       gradient: "from-green-500 to-teal-500",
-      featured: true,
+      featured: false,
       repoLink: "https://github.com/KhushaliTrivedi/react-360-panorama",
       liveDemo: "https://react-360-panorama.vercel.app/",
       coverImage: "assets/360View.png",

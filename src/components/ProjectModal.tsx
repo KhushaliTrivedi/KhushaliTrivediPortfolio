@@ -269,6 +269,15 @@ const getProjectFeatures = (title: string): string[] => {
       "Simple and modular Express.js backend architecture",
       "Basic validation and error handling for authentication endpoints",
       "Foundation for building secure and scalable authentication systems"
+    ],
+    "Stacked by Khushali": [
+      "Categorized code snippets across multiple technologies (React, Node, SQL, AWS, etc.)",
+      "Support for Markdown-formatted content for easy documentation",
+      "Instant full-text search with keyword and tag filtering",
+      "Responsive design optimized for both desktop and mobile use",
+      "Copy-to-clipboard functionality for all snippets",
+      "Simple and intuitive UI/UX with light and dark mode",
+      "Easily extensible for adding new categories and features"
     ]
   };
 
