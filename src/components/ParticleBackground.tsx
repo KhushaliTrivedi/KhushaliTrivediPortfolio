@@ -33,13 +33,13 @@ const ParticleBackground = () => {
 
     createParticles();
     window.addEventListener('resize', createParticles);
-    
+
     return () => window.removeEventListener('resize', createParticles);
   }, []);
 
   useEffect(() => {
     const animateParticles = () => {
-      setParticles(prev => 
+      setParticles(prev =>
         prev.map(particle => ({
           ...particle,
           x: (particle.x + particle.speedX + window.innerWidth) % window.innerWidth,

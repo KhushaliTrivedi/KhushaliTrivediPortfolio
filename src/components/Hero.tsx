@@ -1,10 +1,8 @@
 
-import { useEffect, useState, Suspense } from 'react';
+import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Github, Mail, Link, Linkedin } from 'lucide-react';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
-import LaptopModel from './LaptopModel';
+import DesktopSetup from './DesktopSetup';
 import TypingAnimation from './TypingAnimation';
 
 const Hero = () => {
@@ -91,25 +89,10 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right side - 3D Laptop */}
-          <div className={`h-96 lg:h-[500px] transition-all duration-1000 delay-300 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-            <Canvas>
-              <PerspectiveCamera makeDefault position={[0, 0, 5]} />
-              <ambientLight intensity={0.4} />
-              <directionalLight position={[10, 10, 5]} intensity={1} />
-              <pointLight position={[-10, -10, -5]} intensity={0.5} />
-              <Suspense fallback={null}>
-                <LaptopModel />
-              </Suspense>
-              <OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={1} />
-            </Canvas>
+          {/* Right side - Desktop Computer Setup */}
+          <div className={`transition-all duration-1000 delay-300 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+            <DesktopSetup />
           </div>
-        </div>
-      </div>
-
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-muted-foreground rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-muted-foreground rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
     </section>

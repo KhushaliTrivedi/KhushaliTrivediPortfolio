@@ -1,3 +1,4 @@
+
 import { useRef, useState, useEffect } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
@@ -361,8 +362,6 @@ const LaptopModel = () => {
           metalness={0.9}
           transparent
           opacity={0.95}
-          clearcoat={1.0}
-          clearcoatRoughness={0.1}
         />
       </mesh>
 
