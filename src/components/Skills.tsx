@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from 'react';
 
 const Skills = () => {
@@ -46,7 +45,7 @@ const Skills = () => {
     {
       title: "Cloud & DevOps",
       color: "from-cyan-400 to-blue-500",
-      skills: ["AWS EC2", "CI/CD", "GitHub Actions", "Ubuntu Server"]
+      skills: ["AWS EC2", "CI/CD", "GitHub Actions", "Ubuntu Server", "GCP"]
     },
     {
       title: "Additional Technologies",
@@ -54,6 +53,46 @@ const Skills = () => {
       skills: ["Three.js", "Socket.io", "Motoko", "Internet Computer Protocol", "DFINITY", "WEB3 Applications", "Google Dialogflow", "jQuery", "AJAX", "WordPress"]
     }
   ];
+
+  // Mapping of skill names to icon URLs (devicon or similar)
+  const skillIcons: Record<string, string> = {
+    'Node.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
+    'Express.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
+    'PHP': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
+    'RESTful APIs': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/openapi/openapi-original.svg',
+    'Microservices': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+    'React.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+    'Next.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
+    'TypeScript': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+    'JavaScript': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+    'HTML': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+    'CSS': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+    'MongoDB': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
+    'PostgreSQL': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
+    'MySQL': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+    'Mongoose ODM': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
+    'Sequelize ORM': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg',
+    'Tailwind CSS': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg',
+    'Bootstrap': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg',
+    'EJS': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+    'Responsive Design': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+    'AWS EC2': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg',
+    'CI/CD': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+    'GitHub Actions': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+    'Ubuntu Server': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg',
+    'GCP': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg',
+    'Three.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg',
+    'Socket.io': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg',
+    'Motoko': 'https://images.squarespace-cdn.com/content/v1/54437e21e4b048c830a0cff1/1618125502565-MJIQ7JNAOWSH1ADHPUM8/Motoko+logo+mark.png',
+    'Internet Computer Protocol': 'https://assets.coingecko.com/coins/images/14495/large/Internet_Computer_logo.png?1696514180',
+    'DFINITY': 'https://cdn3d.iconscout.com/3d/premium/thumb/icp-coin-6400056-5272805.png',
+    'WEB3 Applications': 'https://static.vecteezy.com/system/resources/previews/009/636/671/original/web-3-0-3d-illustration-icon-png.png',
+    'Google Dialogflow': 'https://www.svgrepo.com/download/353648/dialogflow.svg',
+    'jQuery': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg',
+    'AJAX': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+    'WordPress': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg',
+    'Git': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
+  };
 
   return (
     <section id="skills" ref={ref} className="py-20 relative">
@@ -87,8 +126,16 @@ const Skills = () => {
                   {category.skills.map((skill, skillIndex) => (
                     <span
                       key={skillIndex}
-                      className="px-3 py-1 bg-secondary text-secondary-foreground text-sm rounded-full border border-border hover:border-muted-foreground transition-colors duration-300"
+                      className="px-3 py-1 bg-secondary text-secondary-foreground text-sm rounded-full border border-border hover:border-muted-foreground transition-colors duration-300 flex items-center gap-2"
                     >
+                      {skillIcons[skill] && (
+                        <img
+                          src={skillIcons[skill]}
+                          alt={skill + ' icon'}
+                          className="w-5 h-5 inline-block align-middle"
+                          loading="lazy"
+                        />
+                      )}
                       {skill}
                     </span>
                   ))}
