@@ -80,7 +80,7 @@ const DesktopSetup = () => {
       {programmingIcons.map((icon, index) => (
         <div
           key={icon.name}
-          className="absolute z-10 animate-float"
+          className={`absolute z-10 animate-float ${index > 3 ? 'hidden sm:block' : ''}`}
           style={{
             ...icon.position,
             animationDelay: `${index * 0.5}s`,
